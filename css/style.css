@@ -1,0 +1,67 @@
+body {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background: #00E4E3;
+}
+body > div {
+  max-width: 1000px;
+  padding-top: 50px;
+}
+.exercise {
+  text-align: left;
+  padding-top: 100px;
+  max-width: 500px;
+}
+h1 {
+  font-size: 50px;
+}
+h1,
+h2,
+h3,
+span,
+p,
+a,
+div,
+body,
+button {
+    font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, serif;
+    color: #fff;
+}
+
+.balloon {
+  font-size: 40px;
+}
+.exercise {
+  display: none;
+}
+.active {
+    display: block;
+  -webkit-animation-name: popOut;
+          animation-name: popOut;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+}
+button {
+  background: none;
+  border: 1px solid #fff;
+  cursor: pointer;
+}
+/* The animation code */
+@-webkit-keyframes popOut {
+  from {
+    color: #1a1c1d;
+  }
+  to {
+    color: #fff;
+  }
+}
+@keyframes popOut {
+  from {
+    color: #1a1c1d;
+  }
+  to {
+    color: #fff;
+  }
+}
