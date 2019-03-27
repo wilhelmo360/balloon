@@ -3,9 +3,6 @@ function getSizeValue(valueWithUnit, unit) {
 }
 
 function balloon(event) {
-	// if (event.defaultPrevented) {
-	//   return; // Do nothing if the event was already processed
-	// }
 	switch (event.keyCode) {
 		case 40:
 			changeSize('.balloon', 1.1, 'down');
@@ -14,20 +11,14 @@ function balloon(event) {
 			changeSize('.balloon', 1.1);
 			break;
 		default:
-			return; // Quit when this doesn't handle the key event.
+			return;
 	}
-
-	// Cancel the default action to avoid it being handled twice
-	// event.preventDefault();
 }
 
 function question() {
   $( ".exercise" ).toggleClass( "active" );
 }
 
-// element = 'string'
-// amount = int
-// direction '' or down
 function changeSize(element, amount, direction) {
 	element = document.querySelector(element);
 	let elementSize = window.getComputedStyle(element).fontSize;
